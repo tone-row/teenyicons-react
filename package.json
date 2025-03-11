@@ -1,11 +1,56 @@
 {
   "name": "teenyicons-react",
-  "module": "scripts/generate.ts",
+  "version": "0.1.0",
+  "description": "React components for Teenyicons - tiny minimal 1px icons",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "generate": "bun scripts/generate.ts",
+    "build": "bun run generate && tsup",
+    "clean": "rm -rf dist temp",
+    "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@types/bun": "latest",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0",
+    "@types/svgo": "^3.0.0",
+    "svgo": "^3.2.0",
+    "tsup": "^8.0.2",
     "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "teenyicons",
+    "svg",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/teenyicons-react"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@svgr/plugin-prettier": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0"
   }
 }
