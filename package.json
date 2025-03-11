@@ -24,7 +24,7 @@
     "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
-    "react": "^19.0.0"
+    "react": "^18.0.0"
   },
   "devDependencies": {
     "@svgr/core": "^8.1.0",
@@ -46,7 +46,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/teenyicons-react"
+    "url": "https://github.com/robgordon/teenyicons-react"
   },
   "license": "MIT",
   "dependencies": {
