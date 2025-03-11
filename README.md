@@ -28,14 +28,14 @@ bun add teenyicons-react
 ## Usage
 
 ```jsx
-import { Add, Home, User } from "teenyicons-react";
+import { AddOutline, HomeOutline, UserOutline } from "teenyicons-react";
 
 function App() {
   return (
     <div>
-      <Add />
-      <Home />
-      <User />
+      <AddOutline />
+      <HomeOutline />
+      <UserOutline />
     </div>
   );
 }
@@ -45,13 +45,29 @@ function App() {
 
 Each icon comes in two variants:
 
-- Default (outline)
+- Outline (default)
 - Solid
 
-To use the solid variant, append `Solid` to the icon name:
+Example usage of both variants:
 
 ```jsx
-import { HomeSolid, UserSolid } from "teenyicons-react";
+import {
+  HomeOutline,
+  HomeSolid,
+  UserOutline,
+  UserSolid,
+} from "teenyicons-react";
+
+function App() {
+  return (
+    <div>
+      <HomeOutline /> {/* Outline variant */}
+      <HomeSolid /> {/* Solid variant */}
+      <UserOutline />
+      <UserSolid />
+    </div>
+  );
+}
 ```
 
 ## Props

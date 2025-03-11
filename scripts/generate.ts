@@ -59,7 +59,7 @@ const getComponentName = (svgPath: string): string => {
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join("");
   const variant = ICON_DIRS.find((dir) => svgPath.includes(dir)) || "";
-  return `${baseName}${variant}Icon`;
+  return `${baseName}${variant.charAt(0).toUpperCase() + variant.slice(1)}`;
 };
 
 const processSvgFile = async (svgPath: string, outputPath: string) => {
@@ -74,7 +74,7 @@ const processSvgFile = async (svgPath: string, outputPath: string) => {
         "@svgr/plugin-prettier",
       ],
       typescript: true,
-      ref: true,
+      ref: false,
       memo: true,
       dimensions: true,
       icon: true,
@@ -121,7 +121,7 @@ async function generateComponents() {
 
       const fullComponentName = `${componentName}${
         variant.charAt(0).toUpperCase() + variant.slice(1)
-      }Icon`;
+      }`;
       const outputPath = join(
         OUTPUT_DIR,
         "components",
