@@ -1,5 +1,5 @@
 {
-  "name": "teenyicons-react",
+  "name": "@tonerow/teenyicons-react",
   "version": "0.1.0",
   "description": "React components for Teenyicons - tiny minimal 1px icons",
   "type": "module",
@@ -24,7 +24,7 @@
     "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
-    "react": "^18.0.0"
+    "react": "^19.0.0"
   },
   "devDependencies": {
     "@svgr/core": "^8.1.0",
@@ -46,7 +46,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/robgordon/teenyicons-react"
+    "url": "https://github.com/tone-row/teenyicons-react"
   },
   "license": "MIT",
   "dependencies": {

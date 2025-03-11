@@ -18,17 +18,21 @@ This is an unofficial React port of the Teenyicons library. The original icons a
 ## Installation
 
 ```bash
-npm install teenyicons-react
+npm install @tonerow/teenyicons-react
 # or
-yarn add teenyicons-react
+yarn add @tonerow/teenyicons-react
 # or
-bun add teenyicons-react
+bun add @tonerow/teenyicons-react
 ```
 
 ## Usage
 
 ```jsx
-import { AddOutline, HomeOutline, UserOutline } from "teenyicons-react";
+import {
+  AddOutline,
+  HomeOutline,
+  UserOutline,
+} from "@tonerow/teenyicons-react";
 
 function App() {
   return (
@@ -56,7 +60,7 @@ import {
   HomeSolid,
   UserOutline,
   UserSolid,
-} from "teenyicons-react";
+} from "@tonerow/teenyicons-react";
 
 function App() {
   return (
